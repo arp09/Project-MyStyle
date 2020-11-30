@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Women</title>
+</head>
+<body>
+<h1 th:each="women : ${allWomens}"
+    th:text="${women}"></h1>
+</body>
+</html>

@@ -3,35 +3,49 @@
       layout:decorate="~{fragments/main_layout}"
       xmlns:th="https://www.thymeleaf.org">
 
-
-
-
+<body  BACKGROUND="https://www.img.in.th/images/1d4438e3a163556ac235bddd5a178df5.jpg">
 <div layout:fragment="content" class=" container "  >
     <br>
     <br>
     <br>
     <h1>Sign in </h1>
-    <form action="#" th:action="@{/login}" method="POST">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class=".col-6">
+                <form action="#" th:action="@{/login}" method="POST">
 
-        <div class ="form-group"  >
+                    <div class ="form-group"  >
 
-            <label for="inputId">Username</label>
+                        <label for="inputId">Username</label>
 
-            <input  type="input" class="form-control" name="id" id="inputId"     >
+                        <input  type="input" class="form-control" name="id" id="inputId"   >
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="inputPin">Password</label>
+                        <input type="password" class="form-control" name="pin" id="inputPin">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary">
+                    </div>
+                </form>
+                <div class>
+                    <h1 class="display-4 my-font" th:text="${greeting}"></h1>
+                    <p><a th:href="@{/customer}">Customer Registration</a></p>
+                </div>
+            </div>
         </div>
-
-        <div class="form-group">
-            <label for="inputPin">Password</label>
-            <input type="password" class="form-control" name="pin" id="inputPin">
-        </div>
-
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary">
-        </div>
-    </form>
-    <div class>
-        <h1 class="display-4 my-font" th:text="${greeting}"></h1>
-        <p><a th:href="@{/customer}">Customer Registration</a></p>
     </div>
+
+
+
+
+
+
+
 </div>
 

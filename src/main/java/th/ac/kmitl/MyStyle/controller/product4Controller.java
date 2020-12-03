@@ -4,12 +4,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HomeController {
+public class product4Controller {
 
-    @RequestMapping("/home")
+    @RequestMapping("/product4")
     public String getHomePage(Model model) {
         model.addAttribute("greeting", "MYSTYLE");
 
-        return "home";
+        return "product4";
     }
 }

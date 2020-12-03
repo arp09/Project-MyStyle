@@ -11,8 +11,8 @@ public class MenController {
     @RequestMapping("/men")
     public String getMenPage(Model model) {
         ArrayList<String> mens = new ArrayList<>();
-        mens.add("Tops");
-        mens.add("Bottoms");
+        //mens.add("Tops");
+        //mens.add("Bottoms");
 
         model.addAttribute("allMens", mens);
         return "men";

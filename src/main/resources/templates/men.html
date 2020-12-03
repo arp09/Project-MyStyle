@@ -2,12 +2,59 @@
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 
 
-<meta charset="UTF-8">
-<title>Men</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Men</title>
+    <link th:rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link th:rel="stylesheet" th:href="@{css/mystyle.css}">
 </head>
+
+
+
 <body>
 <h1 th:each="men : ${allMens}"
     th:text="${men}"></h1>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand my-font" th:href="@{/home}">Mystyle</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link my-font"th:href="@{/home}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link my-font" th:href="@{/women}" >Women</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link my-font" th:href="@{/men}">Man</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link my-font" th:href="@{/kids}">Kids</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/customer}"></a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+
+            <a class="layout-header-link link" th:href="@{/login}"><span>Sign in </span></a>
+        </li>
+
+    </ul>
+</div>
+</nav>
+
+
+
+
+
 
 
 </body>

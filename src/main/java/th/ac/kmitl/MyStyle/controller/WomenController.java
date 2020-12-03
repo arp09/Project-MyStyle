@@ -13,8 +13,8 @@ public class WomenController {
     @RequestMapping("/women")
     public String getWomenPage(Model model) {
         ArrayList<String> womens = new ArrayList<>();
-        womens.add("Tops");
-        womens.add("Bottoms");
+        //womens.add("Tops");
+        //womens.add("Bottoms");
 
         model.addAttribute("allWomens", womens);
         return "women";

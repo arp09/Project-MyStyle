@@ -12,8 +12,8 @@ public class KidsController {
     @RequestMapping("/kids")
     public String getKidsPage(Model model) {
         ArrayList<String> kidss = new ArrayList<>();
-        kidss.add("Tops");
-        kidss.add("Bottoms");
+        //kidss.add("Tops");
+        //kidss.add("Bottoms");
 
         model.addAttribute("allKidss", kidss);
         return "kids";
